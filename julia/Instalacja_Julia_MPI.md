@@ -6,6 +6,17 @@ Instalacja Julii w wersji 1.9.3 (najnowsza na dzień 2023 10 13):
 Skrypt należy wykonać w bash. pobierze pliki i wypakuje je.
 ```bash
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.3-linux-x86_64.tar.gz
+wget https://julialang-s3.julialang.org/bin/checksums/julia-1.9.3.md5
+cat julia-1.9.3.md5 | grep "julia-1.9.3-linux-x86_64.tar.gz" > julia.md5 
+md5sum -c julia.md5
+```
+Jeżeli md5 jest ok, plik został poprawnie pobrany. Dodatkowy check z dodatkowym komentarzem:
+
+```bash
+md5sum -c julia.md5;if [[ $? -eq 0 ]]; then echo Plik zostal poprawnie popbrany; else echo PLIK NIE JEST OK; fi
+```
+Rozpakowanie archiwum:
+```bash
 tar zxvf julia-1.9.3-linux-x86_64.tar.gz
 rm julia-1.9.3-linux-x86_64.tar.gz
 ```
@@ -157,3 +168,6 @@ Proces 0 send: 1Process 1 recieved: 1
 
 m@m-VirtualBox:~/code$ 
 ```
+
+---
+<p style="text-align: right;">Autor: Maciej Fender</p>
