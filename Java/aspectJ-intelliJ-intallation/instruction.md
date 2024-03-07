@@ -5,7 +5,7 @@
 ## Instalacja Toolsów
 * https://github.com/eclipse-aspectj/aspectj/releases - Pobranie instalatora narzedzi aspectjtools, trzeba go zainstalowac i dodać zainstalowwane komponenty do zmiennych środowiskowych
 ## Gradle w projekcie
-* dodanie id "io.freefair.aspectj" version "5.1.1" do plugins w gradle.build
+* dodanie id "io.freefair.aspectj" version "5.1.1" do plugins w gradle.build **NALEŻY WYBRAĆ AKTUALNĄ WERSJĘ I PODAC JA** (Link: https://plugins.gradle.org/plugin/io.freefair.aspectj)
 * dodanie sekcji do gradle.build
 ```groovy
 configurations {
@@ -58,3 +58,7 @@ test {
 2. ustalenie levelu jezyka ( u mnie 21 )
 3. wskazanie toolsów instalowanych z linka z github
 4. zaznaczenie procesowania adnotacji i delegacji do javac (opcjonalne)
+
+## Przydatne linki
+* https://stackoverflow.com/questions/66440606/how-to-make-an-aspectj-aspect-work-in-a-gradle-project
+* https://plugins.gradle.org/plugin/io.freefair.aspectj
