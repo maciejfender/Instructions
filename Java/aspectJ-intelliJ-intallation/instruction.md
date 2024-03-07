@@ -59,6 +59,11 @@ test {
 3. wskazanie toolsów instalowanych z linka z github
 4. zaznaczenie procesowania adnotacji i delegacji do javac (opcjonalne)
 
+## Zmiana by odpalac projekt u prowadzącego
+Zmiana z Ajc na Javac
+![alt text](image-1.png)
+
+
 ## Przydatne linki
 * https://stackoverflow.com/questions/66440606/how-to-make-an-aspectj-aspect-work-in-a-gradle-project
 * https://plugins.gradle.org/plugin/io.freefair.aspectj
