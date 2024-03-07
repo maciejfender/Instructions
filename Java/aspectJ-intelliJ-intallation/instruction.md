@@ -59,6 +59,10 @@ test {
 3. wskazanie toolsów instalowanych z linka z github
 4. zaznaczenie procesowania adnotacji i delegacji do javac (opcjonalne)
 
+## W przypadku projektu MAVEN
+Może się okazać, że potrzebne jest zaznaczenie tej opcji
+![alt text](image-2.png)
+
 ## Zmiana by odpalac projekt u prowadzącego
 Zmiana z Ajc na Javac
 ![alt text](image-1.png)
